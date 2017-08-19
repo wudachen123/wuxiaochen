@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>登录</title>
+    <script type="text/javascript"> 	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		}); 		
+    </script>
+ 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<style type="text/css">
+		html {
+			font-size: 62.5%;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.by {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+		}
+		.header {
+			width: 100%;
+			height: 6rem;
+			background-color: #50B4F9;
+			margin: 0 auto;
+			color: white;
+		}
+		
+		.header>span {
+			line-height: 6rem;
+		}
+		
+		.header>span:nth-of-type(1) {
+			margin-left: 10%;
+			cursor: pointer;
+		}
+		
+		.header>span:nth-of-type(2) {
+			margin-left: 30%;
+		}
+		
+		.header2 {
+			width: 100%;
+			height: 6rem;
+			line-height: 6rem;
+			background-color: #EFEFF4;
+		}
+		
+		.header2>span {
+			margin-left: 10%;
+		}
+		
+		.container {
+			width: 100%;
+		}
+		
+		.contain {
+			width: 86%;
+			margin: 0 auto;
+		}
+		
+		.contain>div {
+			height: 2rem;
+			width: 100%;
+			margin-top: 2rem;
+		}
+		.contain>div:nth-of-type(1) {
+			
+		}
+		.contain img {
+			width: 1.5rem;
+			vertical-align: middle;
+			margin-right: 1.5rem;
+		}
+		
+		.contain input {
+			width: 80%;
+			height: 2rem;
+			border: none;
+			outline: none;
+		}
+		
+		#four {
+			width: 60%;
+		}
+		
+		.yanzhengma {
+			float: right;
+			margin-right: 10%;
+			color: dodgerblue;
+			cursor: pointer;
+		}
+		
+		.container>select {
+			width: 13rem;
+			height: 3rem;
+			color: #9A9A9A;
+			margin-left: 10%;
+		}
+		
+		.bottom {
+			width: 100%;
+			background-color: #EFEFF4;
+			height: 13rem;
+			margin-top: 2rem;
+		}
+		
+		.bottom input {
+			margin-top: 2rem;
+			margin-left: 10%;
+		}
+		
+		.bottom>button {
+			width: 80%;
+			height: 3rem;
+			margin-left: 10%;
+			border: none;
+			outline: none;
+			background-color: #21A9F5;
+			color: white;
+			margin-top: 3rem;
+		}
+	</style>
+
+	<body>
+		<div class="by">
+			<div class="header">
+				<span><返回</span><span>用户注册</span>
+			</div>
+			<div class="header2">
+				<span>注册成功后，手机号也可为登录账号。</span>
+			</div>
+			<div class="container">
+				<div class="contain">
+					<div><img src="img/zc-1.jpg" /><input type="text" name="" id="" value="" placeholder="输入手机号" /></div>
+					<hr />
+					<div><img src="img/zc-2.jpg" /><input type="password" name="" id="" value="" placeholder="请输入6-25位密码" /></div>
+					<hr />
+					<div><img src="img/zc-3.jpg" /><input type="text" name="" id="" value="" placeholder="请再次输入密码" /></div>
+					<hr />
+					<div><img src="img/zc-3.jpg" /><input type="text" name="" id="four" value="" placeholder="请输入验证码" /><span class="yanzhengma">获取验证码</span></div>
+					<hr />
+				</div>
+				<select>
+					<option value="select">请选择职位</option>
+					<option value="topduan">前端</option>
+					<option value="centerduan">中端</option>
+					<option value="bottomduan">后端</option>
+				</select>
+			</div>
+			<div class="bottom">
+				<label><input type="checkbox" name="" id="" value="" /><span>同意<a href="">《注册协议》</a></span></label>
+				<button>注册</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var sp1 = document.querySelector(".header>span:nth-of-type(1)");
+		sp1.onclick = function() {
+			location.href = "index.html"
+		}
+	</script>
+
+</html>
